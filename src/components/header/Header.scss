@@ -1,0 +1,54 @@
+.Header {
+    height: 56px;
+    width: 100%;
+    background-color: #efefef;
+    margin-bottom: 8px;
+
+    .wrapper {
+        height: 100%;
+        padding: 28px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .left {
+
+
+        .logo {
+            // width: 48px;
+            object-fit: fill;
+            height: 48px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+            padding: 8px 16px;
+            transition: all 0.1s ease;
+        }
+
+        &:hover,
+        &:active {
+            background-color: white;
+        }
+    }
+}
